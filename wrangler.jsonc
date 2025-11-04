@@ -1,0 +1,22 @@
+{
+“$schema”: “node_modules/wrangler/config-schema.json”,
+“main”: “.open-next/worker.js”,
+“name”: “proxy”,
+“compatibility_date”: “2025-03-25”,
+“compatibility_flags”: [
+“nodejs_compat”,
+“global_fetch_strictly_public”
+],
+“assets”: {
+“directory”: “.open-next/assets”,
+“binding”: “ASSETS”
+}
+}
+
+This is the open-next.config.ts:
+import { defineCloudflareConfig } from “@opennextjs/cloudflare”;
+import staticAssetsIncrementalCache from “@opennextjs/cloudflare/overrides/incremental-cache/static-assets-incremental-cache”;
+
+export default defineCloudflareConfig({
+incrementalCache: staticAssetsIncrementalCache,
+});
