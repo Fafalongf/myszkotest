@@ -1,0 +1,262 @@
+*{
+	box-sizing: border-box;
+
+	color:rgb(218, 214, 214);
+	font-family: sans-serif ;
+}
+table, th, td{
+	border:1px solid white;
+	border-collapse: collapse;
+	padding:5px;
+	font-size:20px;
+}
+.bar {
+	display:flex;
+	align-items:center;
+	gap:20px;
+	padding:10px;
+	background-color:rgb(45, 45, 45);
+	position:relative;
+}
+.bar:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition:0.3s; 
+    opacity: 1;
+}
+.bar::after{
+	content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    opacity: 0;
+    transition: 0.3s;
+}
+#mycha{
+	border-radius:1em;
+}
+#banertekst{
+	background-color:rgb(42, 42, 42);
+	border-radius:1em;
+	padding:10px;
+	margin:0;
+	width:100%;
+	text-align:center;
+	justify-content:center;
+	overflow:auto;
+}
+#banertekst1{
+	font-size:60px;
+
+}
+#banertekst2{
+	font-size:200%;
+	text-align:justify;
+	padding:10px;
+	line-height:1,5;
+}
+.baner{
+	display:inline-flex;
+	vertical-align: middle;
+	padding:30px;
+	gap:30px;
+	overflow:hidden;
+}
+.myszkaobraz2{
+	text-align:center;
+	width:auto;
+	height:auto;
+}
+.myszkaobraz{
+	display:inline-flex;
+	align-items:center;
+	transition:0.6s;
+	border-radius:1em;
+	text-decoration:none;
+	flex-direction:column;
+	justify-content:center;
+	vertical-align:middle;
+	width:500px;
+	padding:5px;
+	height:200px;
+	margin:10px;
+}
+.myszkaobraz:hover{
+	border:0px solid;
+	background-color:white;
+	color:black;
+	border-radius:1em;
+	
+}
+a.bar {
+	float:right;
+	display: block;
+	color:white;
+	text-align:center;
+	padding:14px 16px;
+	text-decoration:none;
+}
+.bar.logo{
+	float:left;
+	padding: 8px 16px;
+}
+
+.bar .logo img {
+	height:30px;
+	width:auto;
+	vertical-align:text-top;
+}
+#crazyobraz {
+  width: 50%;
+  height:auto;
+
+}
+img[alt="MyszkoTest"] {
+  width: 30%;
+  height: auto;
+
+}
+img[alt="crazylight"], img[alt="gpx"], img[alt="viper"] {
+  width: 90%;
+  height:auto;
+
+}
+img[alt="crazylight.com"], img[alt="gpx.com"], img[alt="viper.com"] {
+  width: 50%;
+  height:auto;
+
+}
+h2{
+	text-align:center;
+}
+footer{
+	text-align:right;
+}
+hr{
+	color:grey;
+	margin-top:2em;
+
+}
+#kontakt{
+	margin-right:"2em";
+}
+body {
+	min-height: 100dvh;
+	margin: 0;
+	display: grid;
+	grid-template-rows: auto 50fr auto ;
+		background-color:rgb(31,31,31) ;
+}
+hr{
+	border-width:2px;
+	height:2px;
+}
+a.button{
+	padding: 2px 4px;
+    border: 2px solid;
+	border-color:rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+	color:rgb(0, 0, 0);
+	font-size:30px;
+}
+a.button:hover{
+	background-color: rgb(26, 188, 156);
+	border-color: rgb(87, 230, 148);
+	color:white;
+	box-shadow: 0px 5px 30px rgb(37, 216, 115);
+	transition:0.1s;
+}
+#crazylight{
+	float:right;
+	text-align: center;
+	
+}
+p.dane{
+	font-size:60px;
+}
+h1.naglowekdanych{
+	font-size:70px;
+}
+#prawy{
+	float:right;
+}
+
+#zmianaskate{
+	z-index:1;
+	margin-left:40px;
+	gap:20px;
+	display:inline-flex;
+	gap:30px;
+	margin-top:40px;
+	
+}
+#tekstporadnik1{
+	text-align:center;
+	background-color: rgb(42, 42, 42);
+	border-radius:1em;
+	width:72%;
+	padding:10px;
+	margin-right:10px;
+	min-height: 315px; 
+	max-height: 315px;
+	overflow:hidden;
+}
+#lapanie{
+	z-index:1;
+	margin-top: 50px;
+	display:inline-flex;
+	margin-left:40px;
+	margin-bottom: 50px;
+	gap:30px;
+	
+}
+#tekstporadnik2{
+	text-align:center;
+	background-color: rgb(42, 42, 42);
+	border-radius:1em;
+	width:72%;
+	padding:10px;
+	margin-right:10px;
+	min-height: 315px; 
+	max-height: 315px;
+	overflow:hidden;
+
+}
+#bateria{
+	z-index:1;
+	display:inline-flex;
+	margin-left:40px;
+	gap:30px;
+	
+}
+#tekstporadnik3{
+	text-align:center;
+	background-color: rgb(42, 42, 42);
+	border-radius:1em;
+	width:72%;
+	padding:10px;
+	min-height: 315px; 
+	max-height: 315px;
+	margin-right:10px;
+	overflow:hidden;
+}
+.tekst{
+	font-size:180%;
+}
+.tytul{
+	font-size: 250%;
+}
+.poradnikfilmy{
+	border-radius:1em;
+	overflow: hidden;
+}
